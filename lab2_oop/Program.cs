@@ -27,8 +27,8 @@ namespace lab2_oop
                     pgs1.Tofly();
                     break;
                 case 2:
-                    Cat cat1 = new Cat();
-                    cat1.Info();
+                    //Cat cat1 = new Cat();
+                    //cat1.Info();
                     break;
                 case 3:
 
