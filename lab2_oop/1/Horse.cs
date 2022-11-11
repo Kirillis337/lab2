@@ -9,13 +9,13 @@ namespace lab2_oop
 {
     class Horse
     {
-        private string kind="Лошади";
+
         protected string name;
         
         public Horse()
         {
-            Console.WriteLine($"Создание {kind}");
-            Console.Write("Введите имя: ");
+            Console.WriteLine($"Создание {GetType().Name}: ");
+            Console.Write($"Введите имя {GetType().Name}: ");
             name = Console.ReadLine();
             while (!Regex.IsMatch(name, @"^[А-Яа-я]+$"))
             {
@@ -26,7 +26,7 @@ namespace lab2_oop
 
         public void Info()
         {
-            Console.WriteLine($"Кличка:  {name}");
+            Console.WriteLine($"Кличка {GetType().Name}:  {name}");
         }
 
     }
