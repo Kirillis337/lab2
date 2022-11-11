@@ -7,7 +7,7 @@ using System.Text.RegularExpressions;
 
 namespace lab2_oop
 {
-    class Cat : Animal
+    class Cat : Pet
     {
         protected string name;
         public Cat()
@@ -20,23 +20,11 @@ namespace lab2_oop
                 name = Console.ReadLine();
             }
             
-            Console.Write("Введите вес: ");
-            while (!double.TryParse(Console.ReadLine(), out weight))
-                Console.WriteLine("Введите корректный вес: ");
-            Console.Write("Введите возраст: ");
-            while (!int.TryParse(Console.ReadLine(), out age))
-                Console.WriteLine("Введите корректный возраст: ");
-            Console.Write("Введите пол: ");
-            gender = Console.ReadLine();
-            while (!(gender == "м" || gender == "ж"))
-            {
-                Console.WriteLine("Введите корректную x координату центра");
-                gender = Console.ReadLine();
-            }
+
         }
         public void Info()
         {
-            Console.WriteLine($"Кличка:{name} Вес:{weight} Возраст:{age} Пол:{gender}");
+            Console.WriteLine($" Класс:{GetType().Name}, Кличка:{name}, Вес:{weight}, Возраст:{age}, Пол:{gender}");
         }
     }
 }

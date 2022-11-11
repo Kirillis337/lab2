@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace lab2_oop
 {
-    class Animal
+    class Monkey:Animal
     {
-        protected double weight;
-        protected int age;
-        protected string gender;
-
     }
 }

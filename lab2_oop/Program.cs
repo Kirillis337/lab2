@@ -17,18 +17,23 @@ namespace lab2_oop
                 case 1:
                     
                     Horse hrs1 = new Horse();
-
+                    DrawLine();
                     Pegas pgs1 = new Pegas();
-
+                    DrawLine();
                     hrs1.Info();
-                    
+                    DrawLine();
                     pgs1.Info();
-
+                    DrawLine();
                     pgs1.Tofly();
                     break;
                 case 2:
-                    //Cat cat1 = new Cat();
-                    //cat1.Info();
+                    Cat cat1 = new Cat();
+                    DrawLine();
+                    cat1.Info();
+                    DrawLine();
+                    Cat dog1 = new Cat();
+                    DrawLine();
+                    dog1.Info();
                     break;
                 case 3:
 
@@ -36,8 +41,15 @@ namespace lab2_oop
                 case 4:
 
                     break;
+
+                  
             }
 
+             Console.ReadKey();
+        }
+        static void DrawLine()
+        {
+            Console.WriteLine("--------------------------------------------------------------------------------");
         }
     }
 }
