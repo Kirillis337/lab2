@@ -48,7 +48,7 @@ namespace lab2_oop
                     fsh.ToSwim();
                     animal.ToWalk();
                     mnk.ToClimb();
-                    Human hum = new Human(true, "Шерсть", 16, "Вася","Пупкин","Слесарь");
+                    Human hum = new Human(true, "Густая шевелюра", 16, "Вася","Пупкин","Слесарь");
                     hum.Info();
                     fsh.ToSwim();
                     animal.ToWalk();
