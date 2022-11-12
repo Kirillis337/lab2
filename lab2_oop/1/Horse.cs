@@ -9,12 +9,12 @@ namespace lab2_oop
 {
     class Horse
     {
-
+        //protected string kind="Лошади";
         protected string name;
         
         public Horse()
         {
-            Console.WriteLine($"Создание {GetType().Name}: ");
+            Console.WriteLine($"Создание {GetType().Name}: "); //{kind}:
             Console.Write($"Введите имя {GetType().Name}: ");
             name = Console.ReadLine();
             while (!Regex.IsMatch(name, @"^[А-Яа-я]+$"))

@@ -27,6 +27,6 @@ namespace lab2_oop
                 gender = Console.ReadLine();
             }
         }
-
+ 
     }
 }

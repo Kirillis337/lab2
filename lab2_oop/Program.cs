@@ -36,7 +36,24 @@ namespace lab2_oop
                     dog1.Info();
                     break;
                 case 3:
-
+                    Fish fsh = new Fish(true);
+                    fsh.Info();
+                    fsh.ToSwim();
+                    Animal animal = new Animal(false, "Шерсть");
+                    animal.Info();
+                    fsh.ToSwim();
+                    animal.ToWalk();
+                    Monkey mnk = new Monkey(true, "Шерсть", 20);
+                    mnk.Info();
+                    fsh.ToSwim();
+                    animal.ToWalk();
+                    mnk.ToClimb();
+                    Human hum = new Human(true, "Шерсть", 16, "Вася","Пупкин","Слесарь");
+                    hum.Info();
+                    fsh.ToSwim();
+                    animal.ToWalk();
+                    mnk.ToClimb();
+                    hum.Totalk();
                     break;
                 case 4:
 
