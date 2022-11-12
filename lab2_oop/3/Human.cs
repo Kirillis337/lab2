@@ -22,7 +22,7 @@ namespace lab2_oop
         }
         public void Totalk()
         {
-            Console.WriteLine($"Я умею говорить");
+            Console.WriteLine($"Я умею говорить. ");
         }
         public new void Info()
         {
