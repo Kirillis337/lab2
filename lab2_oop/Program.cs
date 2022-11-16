@@ -9,13 +9,12 @@ namespace lab2_oop
         {
             byte task;
 
-            Console.Write("Введите номер задания(1-4): ");
+            Console.Write("Введите номер задания(1-3): ");
             while (!byte.TryParse(Console.ReadLine(), out task))
                 Console.Write("Введите корректную x координату центра: ");
             switch (task)
             {
                 case 1:
-                    
                     Horse hrs1 = new Horse();
                     DrawLine();
                     Pegas pgs1 = new Pegas();
@@ -55,10 +54,6 @@ namespace lab2_oop
                     mnk.ToClimb();
                     hum.Totalk();
                     break;
-                case 4:
-
-                    break;
-
                   
             }
 
