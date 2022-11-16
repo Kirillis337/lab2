@@ -24,7 +24,7 @@ namespace lab2_oop
         }
         public void Info()
         {
-            Console.WriteLine($" Класс:{GetType().Name}, Кличка:{name}, Вес:{weight}, Возраст:{age}, Пол:{gender}");
+            Console.WriteLine($" Класс:{GetType().Name} Кличка:{name} Вес:{weight} Возраст:{age} Пол:{gender}");
         }
     }
 }
