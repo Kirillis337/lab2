@@ -20,17 +20,18 @@ namespace lab2_oop
                     Pegas pgs1 = new Pegas();
                     DrawLine();
                     hrs1.Info();
-                    DrawLine();
                     pgs1.Info();
                     DrawLine();
                     pgs1.Tofly();
                     break;
                 case 2:
+                    Console.WriteLine("Создаем кота");
                     Cat cat1 = new Cat();
                     DrawLine();
                     cat1.Info();
                     DrawLine();
-                    Cat dog1 = new Cat();
+                    Console.WriteLine("Создаем собаку");
+                    Dog dog1 = new Dog();
                     DrawLine();
                     dog1.Info();
                     break;

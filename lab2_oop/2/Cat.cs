@@ -12,7 +12,7 @@ namespace lab2_oop
         private string name;
         public Cat()
         {
-            Console.Write("Введите имя: ");
+            Console.Write($"Введите имя {GetType().Name}: ");
             name = Console.ReadLine();
             while (!Regex.IsMatch(name, @"^[А-Яа-я]+$"))
             {
@@ -22,7 +22,7 @@ namespace lab2_oop
             
 
         }
-        public void  Info()
+        public void Info()
         {
             Console.WriteLine($" Класс:{GetType().Name}, Кличка:{name}, Вес:{weight}, Возраст:{age}, Пол:{gender}");
         }

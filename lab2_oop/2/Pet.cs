@@ -26,6 +26,7 @@ namespace lab2_oop
                 Console.Write("Есть только 2 гендера. Введите пол(м/ж): ");
                 gender = Console.ReadLine();
             }
+
         }
  
     }
